@@ -1,0 +1,1309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@font-face {
+  font-family: "Nautilus";
+  src: url(/Nautilus.woff2);
+}
+@font-face {
+  font-family: "ProximaNovaR";
+  src: url(/ProximaNova-Regular.woff);
+}
+@font-face {
+  font-family: "ProximaNovaB";
+  src: url(/ProximaNova-Bold.woff);
+}
+@font-face {
+  font-family: "ProximaNovaL";
+  src: url(/ProximaNova-Light.woff);
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container-fluid {
+  max-width: 1170px;
+}
+/* Header */
+
+.header-bg {
+  background: url(../images/bg-header.png) no-repeat center center/cover;
+  height: 660px;
+  position: relative;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.303);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "ProximaNovaR";
+  font-size: 16px;
+  color: alicebluewhite;
+  padding: 0;
+  margin: 12px 0;
+}
+.ul a {
+  color: rgba(255, 255, 255, 0.89);
+  padding-right: 15px;
+}
+.ul li a:hover {
+  font-family: "ProximaNovaB";
+  background-color: rgba(252, 252, 252, 0.8);
+  transition: 0.5s;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #333433;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Nautilus";
+  padding-right: 200px;
+}
+.logo a {
+  color: white;
+  font-size: 24px;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.897);
+  outline: none;
+  border: none;
+}
+.h1-a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 120px 52px 120px;
+}
+h1 {
+  font-size: 55px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.h1-a .contact-us {
+  display: block;
+  margin: auto;
+  width: 190px;
+  font-size: 21.89px;
+  background-color: #55d054;
+  padding: 15px 23px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-family: "ProximaNovaR";
+  margin-bottom: 150px;
+}
+.scroll-down {
+  text-align: center;
+  padding: 5px;
+  width: 100px;
+  margin: auto;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: "ProximaNovaL";
+  background-color: rgba(255, 255, 255, 0.897);
+}
+.scroll-down span {
+  font-family: FontAwesome;
+  font-size: 11px;
+}
+
+/* What We Do */
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  height: 580px;
+}
+.what-we-do-header {
+  text-align: center;
+}
+.h2 {
+  margin: 0;
+  padding-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(111, 111, 111);
+  position: relative;
+}
+.line .h2::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  background-color: black;
+  height: 2px;
+  bottom: -10px;
+  left: 48%;
+}
+.after-h2-p {
+  font-family: "OpenSans", sans-serif;
+  color: rgb(190, 190, 190);
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.three-pics-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 100%;
+}
+.first-pic-div {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.h3 {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(150, 150, 150);
+}
+.what-we-do-p {
+  color: rgb(143, 143, 143);
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+.pic-icon {
+  position: absolute;
+  left: 37%;
+  top: 10%;
+}
+.first-pic-div a {
+  background-color: #55d054;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+/* Our Latest Work */
+
+.our-latest-work {
+  width: 100%;
+  height: 740px;
+  background-color: #53d155;
+  text-align: center;
+}
+.our-latest-work-header h2,
+.meet-the-team h2 {
+  color: #1f7b20;
+}
+.our-latest-work-header p,
+.meet-the-team p {
+  color: #2b9a2c;
+}
+.active-button {
+  font-family: "ProximaNovaR";
+  padding: 10px 30px 10px 20px;
+  background-color: #279c2b;
+  border-radius: 40px 0 0 40px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+}
+.not-active-button {
+  font-family: "ProximaNovaR";
+  font-weight: bold;
+  padding: 9px 30px 9px 20px;
+  border-radius: 0 40px 40px 0;
+  font-size: 16px;
+  color: #279c2b;
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 1px solid #1f7b20;
+}
+.ten-pics {
+  margin-bottom: 55px;
+  max-width: 970px;
+  margin: auto;
+  margin-bottom: 55px;
+}
+.middle-button {
+  border-radius: 0;
+}
+.three-buttons a {
+  margin: -10px;
+}
+.three-buttons {
+  margin: 60px 0;
+}
+.first-row,
+.second-row {
+  width: 100%;
+}
+.first-row img {
+  margin-right: 30px;
+  width: 15%;
+}
+.second-row img {
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 15%;
+}
+.first-row img:nth-child(5) {
+  margin: 0;
+}
+.second-row img:nth-child(5) {
+  margin-right: 0;
+}
+.view-more {
+  border-radius: 50px;
+  margin-bottom: 50px;
+  padding-right: 17px;
+}
+.view-more span {
+  font-family: FontAwesome;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+/* Testimonials */
+
+.testimonials {
+  text-align: center;
+  height: 340px;
+}
+.text-part {
+  width: 540px;
+  margin: auto;
+  font-size: 16px;
+  color: grey;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.mr-herp {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mr-herp-about {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.mr-herp-about p:nth-child(1) {
+  font-family: "ProximaNovaR";
+  font-size: 13px;
+  color: black;
+  text-align: left;
+  margin: 0;
+  padding: 0px;
+}
+.mr-herp-about p:nth-child(2) {
+  font-family: "ProximaNovaB";
+  font-size: 13px;
+  color: rgb(187, 187, 187);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Our Happy Client */
+
+.our-happy-client {
+  height: 500px;
+  background-color: #f2f1f1;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.client-gallery {
+  padding: 0 125px;
+  height: 235px;
+  margin-bottom: 30px;
+}
+.client-pics {
+  margin: auto;
+}
+.client-pics img {
+  width: 14%;
+  height: 16%;
+}
+.apple {
+  width: 8% !important;
+  height: 5% !important;
+}
+.client-first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.client-second-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.client-gallery a {
+  display: block;
+  width: 190px;
+  margin: auto;
+  background-color: #dddddc;
+  color: #b3acad;
+  margin-bottom: 100px;
+}
+.view-more {
+  display: block;
+  width: 190px;
+  margin: auto;
+  background-color: #dddddc;
+  color: #b3acad;
+}
+
+/* Meet The Team */
+
+.meet-the-team {
+  width: 100%;
+  text-align: center;
+  height: 480px;
+  background-color: #53d155;
+}
+.team-gallery {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.team {
+  margin: 0 15px;
+}
+.team h3 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: "ProximaNovaR";
+}
+.team-member {
+  width: 100%;
+  height: 50%;
+}
+.socs {
+  width: 90px;
+  background-color: rgb(235, 235, 235);
+  margin: auto;
+  padding: 2px 0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.socs img {
+  padding: 0 2px;
+}
+
+/* Work With Us */
+
+.btn-work-with-us {
+  height: 85px;
+  background-color: #3eba3e;
+  display: flex;
+  align-items: center;
+}
+.btn-work-with-us a {
+  display: block;
+  width: 120px;
+  margin: auto;
+  background-color: #53d154;
+  color: rgb(237, 237, 237);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 2px rgba(129, 129, 129, 0.3);
+}
+
+/* Footer */
+
+footer {
+  height: auto;
+  background-color: #333433;
+  text-align: center;
+  padding: 0 35px;
+}
+.columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.first-column,
+.second-column,
+.third-column {
+  width: 33%;
+  height: 100%;
+}
+.columns h2 {
+  margin-top: -10px;
+  font-size: 14px;
+  color: rgba(234, 234, 234, 0.805);
+}
+.line2 .h2::after {
+  width: 30px;
+  background-color: rgba(234, 234, 234, 0.805);
+  left: 45%;
+}
+.first-column p {
+  width: 95%;
+  margin: 30px 0;
+  font-size: 15px;
+  color: rgba(234, 234, 234, 0.805);
+  text-align: center;
+  line-height: 1.1;
+  padding: 0;
+}
+.second-column {
+  padding: 0 20px;
+}
+.third-column p {
+  font-size: 14px;
+  color: rgba(198, 198, 198, 0.805);
+  margin: 1px 0;
+}
+.contacts {
+  margin-top: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+form input {
+  font-family: "ProximaNovaR";
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  font-size: 16px;
+  background-color: #434443;
+  outline: none;
+  border: none;
+  margin-bottom: 3px;
+}
+form textarea {
+  font-family: "ProximaNovaR";
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+  border-radius: 5px 5px 0 0;
+  font-size: 16px;
+  background-color: #434443;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+}
+form a {
+  padding: 10px 50px;
+  font-size: 14px;
+  background-color: #2a9b2b;
+  text-transform: uppercase;
+  color: rgb(225, 225, 225);
+  border-radius: 5px;
+}
+.images-column {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.images-column img {
+  width: 50px;
+}
+.post {
+  display: flex;
+  margin-bottom: 15px;
+}
+.text-a p {
+  font-family: "MontserratLight", sans-serif;
+  color: grey;
+  padding-left: 5px;
+  margin-bottom: 4px;
+}
+.text-a a {
+  display: block;
+  width: 70px;
+  font-family: "MontserratLight", sans-serif;
+  background-color: #53d154;
+  text-transform: uppercase;
+  color: rgb(216, 216, 216);
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-align: left;
+}
+.post2 a {
+  background-color: #febb00;
+  font-size: 13px;
+}
+.post3 a {
+  padding-right: 45px;
+  background-color: #089dea;
+  font-size: 14px;
+}
+.post4 a {
+  width: 40px;
+  background-color: #f34d05;
+  font-size: 14px;
+}
+.post5 a {
+  background-color: #f7b500;
+  font-size: 13px;
+}
+.third-column {
+  margin-bottom: 40px;
+}
+
+/* As Seen On */
+
+.as-seen-on {
+  text-align: center;
+  height: 300px;
+  background-color: #222221;
+}
+.as-seen-on-header h2 {
+  color: #101111;
+}
+.as-seen-on-pics img {
+  width: 20%;
+  height: 20%;
+  display: block;
+}
+.as-seen-on-pics {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+/* Bottompart */
+
+.bottom-part {
+  height: 40px;
+  background-color: #111010;
+  display: flex;
+  align-items: center;
+}
+.bottom-part p {
+  font-family: "ProximaNovaR";
+  margin: 0;
+  color: white;
+  margin: auto;
+}
+.bottom-part span {
+  font-family: FontAwesome;
+  padding: 0 10px;
+}
+
+/* 768 */
+
+@media screen and (max-width: 768px) {
+  /* Header */
+
+  .container-fluid {
+    max-width: 768px;
+  }
+  .logo {
+    padding-right: 150px;
+  }
+  ul {
+    font-size: 14px;
+  }
+  .h1-a {
+    padding: 125px 120px 52px 120px;
+  }
+
+  /* What We Do */
+  .wrapper {
+    height: 600px;
+  }
+  .three-pics-div {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .first-pic-div {
+    width: 200px;
+    margin: auto;
+    font-size: 13px;
+    padding-right: 30px;
+  }
+  .h3 {
+    font-size: 22px;
+  }
+  .what-we-do-p {
+    margin-bottom: 30px;
+  }
+  .pic-icon {
+    left: 25%;
+  }
+  .first-pic-div a {
+    background-color: #55d054;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+
+  /* Our Latest Work */
+
+  .our-latest-work {
+    height: 670px;
+    display: block;
+  }
+  .ten-pics {
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .ten-pics img {
+    width: 110px;
+  }
+  .view-more {
+    color: rgb(92, 92, 92);
+    margin-bottom: 50px;
+  }
+
+  /* Testimonials */
+
+  .testimonials {
+    text-align: center;
+    height: 340px;
+  }
+  .text-part {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .mr-herp {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mr-herp-about {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .mr-herp-about p:nth-child(1) {
+    font-family: "ProximaNovaR";
+    font-size: 13px;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0px;
+  }
+  .mr-herp-about p:nth-child(2) {
+    font-family: "ProximaNovaB";
+    font-size: 13px;
+    color: rgb(187, 187, 187);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Our Happy Client */
+
+  .our-happy-client {
+    padding-bottom: 0;
+  }
+  .client-gallery {
+    padding: 0 50px;
+  }
+  .client-first-row {
+    margin-top: 40px;
+  }
+  .as-seen-on-pics img {
+    width: 13%;
+    height: 25%;
+    display: block;
+  }
+  /* Meet The Team */
+  .meet-the-team {
+    height: 500px;
+  }
+  .meet-the-team img {
+    width: 100px;
+  }
+  .team-member {
+    width: 80%;
+    height: 40%;
+  }
+
+  /* Work With Us */
+
+  .btn-work-with-us a {
+    width: 100px;
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 500px;
+  }
+  .first-column,
+  .second-column,
+  .third-column {
+    width: 300px;
+  }
+  .columns {
+    margin-bottom: 2px;
+  }
+  .first-column p {
+    width: 250px;
+    font-size: 15px;
+  }
+  .second-column {
+    padding: 0 10px;
+  }
+  .third-column {
+    margin-left: 10px;
+  }
+  .third-column p {
+    font-size: 15px;
+  }
+  form {
+    justify-content: center;
+  }
+  form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  form textarea {
+    padding-bottom: 50px;
+  }
+  .images-column img {
+    width: 50px;
+    height: 50px;
+  }
+  .post {
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  .text-a p {
+    font-size: 12px;
+  }
+  .text-a a {
+    font-size: 10px;
+  }
+  .post1 a {
+    width: 50px;
+  }
+  .post2 a {
+    font-size: 9px;
+    width: 50px;
+  }
+  .post3 a {
+    width: 65px;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  .post4 a {
+    width: 27px;
+    font-size: 10px;
+  }
+  .post5 a {
+    font-size: 9px;
+    width: 50px;
+    padding-right: 10px;
+  }
+
+  /* As Seen On */
+
+  .as-seen-on {
+    height: 250px;
+  }
+  .as-seen-on-pics {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .as-seen-on-pics img {
+    margin: 15px 30px 0 30px;
+  }
+
+  /* Bottompart */
+
+  .bottom-part {
+    height: 40px;
+    background-color: #111010;
+    display: flex;
+    align-items: center;
+  }
+  .bottom-part p {
+    margin: auto;
+    font-size: 14px;
+  }
+  .bottom-part span {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+/* 375 */
+
+@media screen and (max-width: 375px) {
+  .container-fluid {
+    max-width: 375px;
+  }
+  /* Header */
+
+  .header-bg {
+    background-position: 50% 50%;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ul li {
+    margin-bottom: 7px;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .logo {
+    padding-right: 5px;
+  }
+  ul {
+    font-size: 14px;
+  }
+  .h1-a {
+    padding: 100px 120px 0 120px;
+  }
+  .search {
+    display: flex;
+    align-items: flex-start;
+  }
+  .search input {
+    display: flex;
+    width: 80px;
+    padding: 0 7px;
+  }
+  .h1-a {
+    padding: 190px 0 180px 0;
+  }
+  h1 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .h1-a a {
+    font-size: 13px;
+    padding: 5px 20px;
+  }
+  .h1-a .contact-us {
+    width: 150px;
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+  .scroll-down {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroll-down span {
+    font-size: 9px;
+    padding-left: 5px;
+  }
+
+  /* What We Do */
+
+  .wrapper {
+    height: 370px;
+    width: 375px;
+  }
+  .pic-bg {
+    width: 60px;
+    height: 60px;
+  }
+  .pic-icon {
+    width: 40px;
+    height: 30px;
+    top: 5%;
+    left: 27%;
+  }
+  .three-pics-div {
+    width: 360px;
+    margin-top: 40px;
+    padding: 0;
+  }
+  .first-pic-div {
+    width: 100px;
+    margin: auto;
+    font-size: 8px;
+    padding-right: 10px;
+  }
+  .what-we-do-header {
+    width: 375px;
+    text-align: center;
+  }
+  .h2 {
+    margin: 0;
+    font-size: 17px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(111, 111, 111);
+    position: relative;
+  }
+  .line .h2::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    background-color: black;
+    height: 2px;
+    bottom: -10px;
+    left: 48%;
+  }
+  .after-h2-p {
+    max-width: 375px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(190, 190, 190);
+    font-size: 12px;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+  }
+  .h3 {
+    font-size: 13px;
+  }
+  .what-we-do-p {
+    width: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .first-pic-div a {
+    background-color: #55d054;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+  }
+
+  /* Our Latest Work */
+
+  .our-latest-work {
+    height: 640px !important;
+  }
+  .ten-pics img {
+    width: 20%;
+  }
+  .our-latest-work {
+    height: 440px;
+  }
+  .active-button {
+    padding: 5px 30px 5px 20px;
+    font-size: 12px;
+  }
+  .not-active-button {
+    padding: 4px 25px 4px 10px;
+    font-size: 12px;
+  }
+  .ten-pics {
+    margin-bottom: 55px;
+    max-width: 375px;
+    margin: auto;
+    margin-bottom: 55px;
+  }
+  .three-buttons {
+    margin: 40px 0;
+  }
+  .first-row,
+  .second-row {
+    flex-wrap: wrap;
+  }
+  .first-row img {
+    margin-right: 10px;
+  }
+  .second-row img {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .view-more span {
+    font-size: 11px;
+  }
+
+  /* Testimonials */
+
+  .testimonials {
+    text-align: center;
+    height: 340px;
+  }
+  .text-part {
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .mr-herp {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mr-herp-about {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .mr-herp-about p:nth-child(1) {
+    font-family: "ProximaNovaR";
+    font-size: 13px;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0px;
+  }
+  .mr-herp-about p:nth-child(2) {
+    font-family: "ProximaNovaB";
+    font-size: 13px;
+    color: rgb(187, 187, 187);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Our Happy Client */
+
+  .our-happy-client {
+    padding-bottom: 0;
+        height: 350px;
+  }
+  .client-gallery {
+    padding: 0 50px;
+    margin: 0;
+  }
+  .client-first-row {
+    margin-top: 40px;
+  }
+  .as-seen-on-pics img {
+    width: 20%;
+    height: 30%;
+    display: block;
+  }
+
+  .meet-the-team img {
+    width: 100px;
+  }
+
+  /* Meet The Team */
+
+  .meet-the-team img {
+    width: 50px;
+    margin: 0 5px;
+  }
+  .meet-the-team {
+    height: 280px;
+  }
+    .team-member {
+    width: 100%;
+    height: 50%;
+  }
+  .team-gallery {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .team {
+    margin: 0 5px;
+  }
+  .team h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .socs {
+    width: 50px;
+  }
+  .socs img {
+    width: 6px;
+    padding: 0;
+  }
+
+  /* Work With Us */
+
+  .btn-work-with-us {
+    height: 50px;
+  }
+  .btn-work-with-us a {
+    width: 60px;
+    text-align: center;
+    font-size: 7px;
+    padding: 7px 10px;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 330px;
+    padding: 0 20px;
+  }
+  .first-column,
+  .second-column,
+  .third-column {
+    width: 100px;
+  }
+  .columns {
+    margin-bottom: 2px;
+  }
+  .first-column p {
+    width: 100px;
+    font-size: 9px;
+  }
+  .second-column {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .third-column {
+    margin-left: 10px;
+  }
+  .third-column p {
+    font-size: 7px;
+  }
+  .columns h2 {
+    font-size: 5px;
+  }
+  .line2 .h2::after {
+  width: 20px;
+  height: 1px;
+  background-color: rgba(234, 234, 234, 0.805);
+  left: 40%;
+}
+  form {
+    justify-content: center;
+  }
+  form input {
+    padding: 5px;
+    font-size: 8px;
+    margin-bottom: 3px;
+  }
+  form textarea {
+    padding-bottom: 30px;
+    font-size: 8px;
+  }
+  form a {
+    font-size: 8px;
+    text-align: center !important;
+  }
+  .images-column img {
+    width: 30px;
+    height: 30px;
+  }
+  .post {
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .text-a p {
+    font-size: 6px;
+  }
+  .text-a a {
+    font-size: 6px;
+  }
+  .post1 a {
+    width: 35px;
+  }
+  .post2 a {
+    font-size: 6px;
+    width: 35px;
+  }
+  .post3 a {
+    width: 30px;
+    padding-right: 20px;
+    font-size: 6px;
+  }
+  .post4 a {
+    width: 27px;
+    font-size: 6px;
+  }
+  .post5 a {
+    font-size: 6px;
+    width: 33px;
+    padding-right: 10px;
+  }
+
+  /* As Seen On */
+
+  .as-seen-on {
+    height: 170px;
+  }
+  .as-seen-on-pics {
+    width: 375px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .as-seen-on-pics img {
+    width: 60px;
+    margin: 15px 10px 0 10px;
+  }
+
+  /* Bottompart */
+
+  .bottom-part {
+    height: 40px;
+    background-color: #111010;
+    display: flex;
+    align-items: center;
+  }
+  .bottom-part p {
+    margin: auto;
+    font-size: 12px;
+  }
+  .bottom-part span {
+    padding: 0 10px;
+    font-size: 8px;
+  }
+  .line .h2::after {
+    height: 1px;
+    left: 45%;
+  }
+}
